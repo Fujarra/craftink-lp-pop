@@ -65,14 +65,15 @@ body::before {
 
 /* ── HERO ── */
 .hero {
-  min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  padding: 120px 48px 80px;
-  gap: 24px;
+  padding: 100px 80px 60px;
+  gap: 40px;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .hero::before {
@@ -194,12 +195,14 @@ body::before {
   align-items: center;
   justify-content: center;
   z-index: 2;
+  width: 100%;
 }
 
 .hero-img-wrap {
   position: relative;
   width: 100%;
-  max-width: 580px;
+  max-width: 620px;
+  margin: 0 auto;
 }
 
 .hero-img-bg {
@@ -257,7 +260,7 @@ body::before {
 
 /* ── PREVIEW PROMISE ── */
 .preview-section {
-  padding: 80px 80px;
+  padding: 48px 80px;
   background: linear-gradient(135deg, rgba(41,171,227,.08) 0%, rgba(227,34,133,.08) 100%);
   border-top: 1px solid rgba(255,255,255,.06);
   border-bottom: 1px solid rgba(255,255,255,.06);
@@ -898,7 +901,7 @@ footer {
 </nav>
 
 <!-- HERO -->
-<section class="hero">
+<div style="background:var(--ink);width:100%;overflow:hidden;"><section class="hero">
   <div class="hero-content">
     <div class="hero-badge fade-up fade-up-1">
       ✦ Impresso em 3D · Pintado à mão · Artesanal
@@ -952,7 +955,7 @@ footer {
       </div>
     </div>
   </div>
-</section>
+</section></div>
 
 <!-- PREVIEW PROMISE -->
 <section class="preview-section">
@@ -1191,7 +1194,7 @@ footer {
       <span>💬</span> Começar agora
     </a>
   </div>
-  <p class="final-trust">Prévia gratuita antes de produzir · Pagamento só após aprovação · 15 a 20 dias úteis</p>
+  <p class="final-trust">Prévia gratuita antes de produzir · Sinal de 40% após aprovação · 15 a 20 dias úteis</p>
 </section>
 
 <!-- FOOTER -->
